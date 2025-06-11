@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "serve": "concurrently \"npm run dev:css\" \"live-server ./public\"",
+    "dev:css": "tailwindcss -i ./public/tailwind.css -o ./public/build/tailwind.css --watch",
+    "build:css": "tailwindcss -i ./public/tailwind.css -o ./public/build/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.9",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.0",
+    "live-server": "^1.2.2"
+  }
+}
